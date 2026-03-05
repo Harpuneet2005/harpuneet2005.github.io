@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harpuneet Singh — CV</title>
+  <meta name="description" content="Harpuneet Singh — CV, links, and contact." />
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card: rgba(255, 255, 255, 0.06);
+      --text: #e8ecf1;
+      --muted: rgba(232, 236, 241, 0.75);
+      --border: rgba(255, 255, 255, 0.14);
+      --shadow: 0 18px 60px rgba(0,0,0,0.35);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background:
+        radial-gradient(900px 600px at 20% 10%, rgba(74, 114, 255, 0.20), transparent 60%),
+        radial-gradient(900px 600px at 90% 30%, rgba(255, 92, 150, 0.16), transparent 55%),
+        radial-gradient(1100px 700px at 50% 90%, rgba(64, 255, 189, 0.10), transparent 60%),
+        var(--bg);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 16px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      overflow: hidden;
+    }
+
+    header.card {
+      padding: 22px 22px 18px;
+      display: grid;
+      gap: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(26px, 3vw, 34px);
+      letter-spacing: 0.2px;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 15px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.04);
+      transition: transform 120ms ease, background 120ms ease, border-color 120ms ease;
+      font-size: 14px;
+      line-height: 1;
+      white-space: nowrap;
+    }
+    a.btn:hover { transform: translateY(-1px); background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.22); }
+    a.btn:active { transform: translateY(0px); }
+
+    .btn.primary {
+      background: rgba(74, 114, 255, 0.20);
+      border-color: rgba(74, 114, 255, 0.45);
+    }
+
+    .row {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 980px) {
+      .row { grid-template-columns: 1.2fr 0.8fr; }
+    }
+
+    .pane {
+      padding: 16px;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: min(74vh, 820px);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: rgba(0,0,0,0.15);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+
+    /* Simple inline icons */
+    .icon {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+    }
+    .icon svg { width: 16px; height: 16px; fill: currentColor; }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header class="card">
+      <h1>Harpuneet Singh</h1>
+      <p class="subtitle">
+        HBSc Computer Science (Co-op), University of Toronto<br />
+        Research: microfluidics • computational imaging • ML systems
+      </p>
+
+      <nav class="actions" aria-label="Links">
+        <a class="btn primary" href="./cv.pdf" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm0 2.5L19.5 10H14zM8 13h8v2H8zm0 4h8v2H8z"/></svg>
+          </span>
+          Open CV (PDF)
+        </a>
+
+        <a class="btn" href="./cv.pdf" download>
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 3v10l4-4 1.4 1.4L12 16.8 6.6 10.4 8 9l4 4V3zM5 19h14v2H5z"/></svg>
+          </span>
+          Download
+        </a>
+
+        <a class="btn" href="mailto:hpuneet.singh@mail.utoronto.ca">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg>
+          </span>
+          Email
+        </a>
+
+        <a class="btn" href="https://github.com/Harpuneet2005" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.9.6-3.5-1.2-3.5-1.2-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.2 2.1 2.9 1.5.1-.7.4-1.2.7-1.5-2.3-.3-4.8-1.2-4.8-5.3 0-1.2.4-2.1 1.1-2.9-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.9 1.1.8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c2-1.4 2.9-1.1 2.9-1.1.6 1.4.2 2.4.1 2.7.7.8 1.1 1.7 1.1 2.9 0 4.1-2.5 5-4.8 5.3.4.3.8 1 .8 2.1V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+          </span>
+          GitHub
+        </a>
+
+        <a class="btn" href="https://www.linkedin.com/in/harpuneet2005/" target="_blank" rel="noopener">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1-.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21H9z"/></svg>
+          </span>
+          LinkedIn
+        </a>
+      </nav>
+    </header>
+
+    <section class="row">
+      <div class="card pane">
+        <iframe src="./CV.pdf" title="Harpuneet Singh CV PDF"></iframe>
+        <p class="note" style="margin-top:10px;">
+          If the preview doesn’t load, use <a class="btn" style="padding:6px 10px; border-radius:10px;" href="./cv.pdf" target="_blank" rel="noopener">Open CV (PDF)</a>.
+        </p>
+      </div>
+
+      <aside class="card pane">
+        <p class="note">
+          <br /><br />
+          <strong>harpuneet2005.github.io/cv.pdf</strong>
+          <br /><br />
+        </p>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Harpuneet Singh
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
