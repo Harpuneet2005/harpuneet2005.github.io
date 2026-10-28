@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="440" viewBox="0 0 330 440">
+  <rect width="330" height="440" fill="#edf3f8"/>
+  <rect x="35" y="48" width="260" height="344" rx="4" fill="#fff" stroke="#c8d8e5"/>
+  <text x="165" y="208" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#315f86">Poster preview</text>
+  <text x="165" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#596b78">Image coming soon</text>
+</svg>
