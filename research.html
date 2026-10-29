@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Harpuneet Singh — University of Toronto computer science student working across sensing, embedded systems, and human-centred technology.">
+    <meta name="theme-color" content="#f9faf8">
+    <title>Research · Harpuneet Singh</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header>
+      <div class="header-inner">
+        <a class="wordmark" href="index.html">Harpuneet Singh<span class="dot">.</span></a>
+        <nav aria-label="Main navigation">
+          <a href="index.html">About</a>
+          <a href="research.html" aria-current="page">Research</a>
+          <a href="work.html">Work</a>
+          <a href="publications.html">Publications</a>
+          <a href="cv.html">CV</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-heading">
+        <p class="eyebrow">CIRCUITS, CODE & CURIOSITY</p>
+        <h1>Research<span class="dot">.</span></h1>
+        <p class="lead">From sensing the invisible to making technology more accessible.</p>
+      </section>
+      <div class="filters" aria-label="Filter research" hidden>
+        <button type="button" aria-pressed="true" data-filter="All">All research <span>9</span></button>
+        <button type="button" aria-pressed="false" data-filter="Sensing">Sensing</button>
+        <button type="button" aria-pressed="false" data-filter="Machine Learning">Machine Learning</button>
+        <button type="button" aria-pressed="false" data-filter="3D Printing">3D Printing</button>
+        <button type="button" aria-pressed="false" data-filter="PCB Design">PCB Design</button>
+        <button type="button" aria-pressed="false" data-filter="AI">AI</button>
+      </div>
+      <p class="sr-only" id="filter-status" role="status"></p>
+      <div class="projects">
+        <article class="project" id="spectrasip" data-category="Sensing">
+          <div class="project-side">
+            <span class="project-number">01</span>
+            <span class="category category-sensing">Sensing</span>
+            <span class="date">May 2026 — Present</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-heading">
+              <div>
+                <h2>SpectraSip</h2>
+                <p class="project-sub">Near-infrared sensing for safer drinks</p>
+                <p class="lab">Interactive Intelligent Systems Laboratory</p>
+              </div>
+              <p class="entry-location">Tokyo, Japan</p>
+            </div>
+            <p>
+              I’m developing a <strong>low-cost smart coaster</strong> that uses <strong>near-infrared
+              spectroscopy</strong> to identify spectral fingerprints of adulterated drinks. To understand how
+              the system performs beyond a controlled setup, I ran <strong>180+ trials</strong> across drug
+              concentrations, drink compositions, and lighting conditions, then trained a multiband spectral
+              classifier that achieved <strong>92% adulterant detection accuracy</strong>.
+            </p>
+            <p>
+              Taking the prototype into <strong>Tokyo nightlife venues</strong> made ambient light a central
+              engineering challenge. Across <strong>four hardware iterations</strong>, I reduced that
+              interference by <strong>75%</strong>, combining optical sensing, classification, and practical
+              hardware design.
+            </p>
+            <div class="tags">
+              <span>NIR spectroscopy</span>
+              <span>Spectral classification</span>
+              <span>Ambient-light suppression</span>
+            </div>
+          </div>
+        </article>
+        <article class="project" id="opto-dye" data-category="Sensing">
+          <div class="project-side">
+            <span class="project-number">02</span>
+            <span class="category category-sensing">Sensing</span>
+            <span class="date">Mar 2025 — Apr 2026</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-heading">
+              <div>
+                <h2>Opto-Dye</h2>
+                <p class="project-sub">Dye-free imaging for forensic science</p>
+                <p class="lab">Wheeler Microfluidics Laboratory</p>
+              </div>
+              <p class="entry-location">Toronto, Canada</p>
+            </div>
+            <p>
+              With <strong>Prof. Aaron Wheeler</strong> and the <strong>Ontario Centre for Forensic
+              Sciences</strong>, I developed a microfluidic–optical system to make forensic imaging more
+              accessible. A <strong>custom multispectral LED array</strong> and a standard microscope
+              supported dye-free cell identification across <strong>350–1080 nm</strong>. Selected as
+              <strong>one of 25 Laidlaw Research Scholars</strong>, I received <strong>$12,500 in
+              funding</strong> to pursue the work.
+            </p>
+            <p>
+              I used <strong>Detectron2 and μSAM</strong> to classify unstained, multichannel microscopy
+              samples and integrated the imaging platform with a <strong>microfluidic DNA-analysis
+              chip</strong>, reducing sample processing time by <strong>70%</strong>. Validation on
+              <strong>200+ samples</strong> achieved <strong>97% accuracy</strong> against traditional
+              staining and hyperspectral methods. The resulting portable, low-power imaging unit was
+              <strong>50 times cheaper</strong> than comparable commercial systems.
+            </p>
+            <div class="tags">
+              <span>Microfluidic integration</span>
+              <span>Cell segmentation</span>
+              <span>Multispectral microscopy</span>
+            </div>
+            <a class="text-link" href="publications.html">Related publication ↗</a>
+          </div>
+        </article>
+        <article class="project" id="chromaflash" data-category="Sensing">
+          <div class="project-side">
+            <span class="project-number">03</span>
+            <span class="category category-sensing">Sensing</span>
+            <span class="date">Apr 2024 — Dec 2025</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-heading">
+              <div>
+                <h2>ChromaFlash</h2>
+                <p class="project-sub">Making material differences visible</p>
+                <p class="lab">Computational Health &amp; Interaction Laboratory</p>
+              </div>
+              <p class="entry-location">Toronto, Canada</p>
+            </div>
+            <p>
+              Working with <strong>Prof. Alex Mariakakis</strong>, I explored how a programmable LED flash
+              could make material differences easier to see with everyday cameras. I characterized <strong>50+
+              materials across 400–900 nm</strong> and developed a <strong>gradient-based optimization
+              algorithm</strong> to select illumination patterns that maximize spectral separability.
+            </p>
+            <p>
+              To turn those patterns into precise illumination, I designed <strong>high-speed PCBs in
+              Altium</strong> with <strong>7 ns LED switching</strong> and implemented per-channel brightness
+              and timing control on a <strong>Raspberry Pi Pico 2</strong> using <strong>C++ and
+              MicroPython</strong>. The system produced <strong>13 dB material contrast</strong>, <strong>10
+              nm illumination granularity</strong>, and <strong>800 lumens</strong> of scene brightness.
+            </p>
+            <div class="tags">
+              <span>High-speed PCB design</span>
+              <span>Illumination optimization</span>
+              <span>Spectral characterization</span>
+            </div>
+          </div>
+        </article>
+        <article class="project" id="cognitive-restructuring" data-category="AI">
+          <div class="project-side">
+            <span class="project-number">04</span>
+            <span class="category category-ai">AI</span>
+            <span class="date">Aug 2024 — Aug 2025</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-heading">
+              <div>
+                <h2>Cognitive Restructuring</h2>
+                <p class="project-sub">Language models for adaptive interventions</p>
+                <p class="lab">Intelligent Adaptive Interventions Laboratory</p>
+              </div>
+              <p class="entry-location">Toronto, Canada</p>
+            </div>
+            <p>
+              Selected as <strong>one of four undergraduates</strong> to work with <strong>Prof. Joseph J.
+              Williams</strong>, I helped develop an <strong>LLM-based cognitive restructuring
+              framework</strong>. Using <strong>Python, LangChain, Keras, and TensorFlow</strong>, I worked on
+              the model architecture to make the framework more efficient, improving <strong>inference
+              efficiency by 40%</strong> and reducing <strong>processing latency by 30%</strong>.
+            </p>
+            <p>
+              I also worked on how people interacted with the system, redesigning the interface with
+              <strong>React and Node.js</strong> and using <strong>Django</strong> during development. The
+              interface improvements increased the daily user base by <strong>200 users</strong>, connecting
+              model performance with a more usable experience.
+            </p>
+            <div class="tags">
+              <span>LLM orchestration</span>
+              <span>Inference optimization</span>
+              <span>Interaction design</span>
+            </div>
+          </div>
+        </article>
+        <article class="project" id="agroarmor" data-category="PCB Design">
+          <div class="project-side">
+            <span class="project-number">05</span>
+            <span class="category category-pcb-design">PCB Design</span>
+            <span class="date">Apr 2024 — Nov 2024</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-heading">
+              <div>
+                <h2>AgroArmor</h2>
+                <p class="project-sub">Modular biogas for rural agriculture</p>
+                <p class="lab">United Nations Innovation Laboratory</p>
+              </div>
+              <p class="entry-location">Rome, Italy</p>
+            </div>
+            <p>
+              I designed a <strong>scalable, modular biogas plant</strong> for rural agricultural settings,
+              focusing on a system that could be maintained and repaired affordably. Using
+              <strong>Altium</strong>, I engineered custom PCBs and <strong>IoT sensor modules</strong> for
+              low-power slurry agitation, automated gas-flow control, and real-time monitoring.
+            </p>
+            <p>
+              I prototyped the hardware in <strong>Fusion 360 and AutoCAD</strong> and modeled gas flow and
+              power consumption in <strong>MATLAB</strong>. Integrating eco-friendly materials reduced costs
+              by <strong>30%</strong> while supporting durability and repairability. The project won
+              <strong>first place in the UN Transformative Research Challenge</strong> and secured
+              <strong>$5,000 in research funding</strong>.
+            </p>
+            <div class="tags">
+              <span>Low-power PCB design</span>
+              <span>IoT monitoring</span>
+              <span>Flow simulation</span>
+            </div>
+          </div>
+        </article>
+        <article class="project" id="mersivity" data-category="PCB Design">
+          <div class="project-side">
+            <span class="project-number">06</span>
+            <span class="category category-pcb-design">PCB Design</span>
+            <span class="date">Oct 2023 — Jan 2024</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-heading">
+              <div>
+                <h2>Mersivity / SWIM</h2>
+                <p class="project-sub">Accessible, brain-controlled immersive technology</p>
+                <p class="lab">Mannlabs</p>
+              </div>
+              <p class="entry-location">Toronto, Canada</p>
+            </div>
+            <p>
+              Under <strong>Prof. Steve Mann</strong>, I worked on inclusive immersive technology for people
+              with <strong>spinal muscular atrophy</strong>. I built <strong>three Sequential Wave Imaging
+              devices</strong> that create a VR environment from a single LED strip, using a <strong>custom
+              EasyEDA PCB</strong> and an <strong>ESP32 Feather</strong> to control addressable LEDs.
+            </p>
+            <p>
+              To connect the visual experience to a direct brain interface, I integrated a <strong>Muse
+              InteraXon EEG headband</strong>. Using <strong>Python and C++</strong>, I translated sensor
+              readings into VR actions and visible waveforms, bringing together biosignal input, embedded
+              control, and accessible interaction.
+            </p>
+            <div class="tags">
+              <span>EEG integration</span>
+              <span>Sequential Wave Imaging</span>
+              <span>Embedded LED control</span>
+            </div>
+          </div>
+        </article>
+        <article class="project" id="stemabled" data-category="3D Printing">
+          <div class="project-side">
+            <span class="project-number">07</span>
+            <span class="category category-3d-printing">3D Printing</span>
+            <span class="date">May 2022 — Aug 2023</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-heading">
+              <div>
+                <h2>STEMabled</h2>
+                <p class="project-sub">Making hands-on STEM accessible</p>
+                <p class="lab">Founder · Accessible education initiative</p>
+              </div>
+            </div>
+            <p>
+              I founded <strong>STEMabled</strong> to make hands-on electronics more accessible to students
+              with disabilities. Using <strong>TinkerCAD</strong>, I designed and <strong>3D-printed four
+              Arduino STEM kits with Braille markings</strong>, then distributed and tested them in
+              collaboration with <strong>IIT Delhi, Plaksha University, and the Institute for the
+              Blind</strong>.
+            </p>
+            <p>
+              Accessible hardware was only part of the work. I led <strong>C++ and MicroPython workshops for
+              150+ visually impaired students</strong>, trained <strong>16 faculty members</strong>, and
+              developed <strong>audio and Braille training modules</strong> so students could explore the kits
+              independently.
+            </p>
+            <div class="tags">
+              <span>Accessible prototyping</span>
+              <span>TinkerCAD fabrication</span>
+              <span>Inclusive STEM instruction</span>
+            </div>
+          </div>
+        </article>
+        <article class="project" id="ev-forecasting" data-category="Machine Learning">
+          <div class="project-side">
+            <span class="project-number">08</span>
+            <span class="category category-machine-learning">Machine Learning</span>
+            <span class="date">May 2023 — Jul 2023</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-heading">
+              <div>
+                <h2>EV Forecasting</h2>
+                <p class="project-sub">Predictive models informed by online sentiment</p>
+                <p class="lab">Tendril Solutions Research</p>
+              </div>
+            </div>
+            <p>
+              As a research intern, I explored how online discussions could inform <strong>electric-vehicle
+              valuations</strong>. I built predictive models using <strong>Python, Keras, and
+              TensorFlow</strong> and compared social platforms to assess how useful their brand sentiment was
+              for forecasting.
+            </p>
+            <p>
+              I improved data collection by parsing <strong>Reddit and Twitter discussions</strong>,
+              connecting public perceptions with the valuation models. The work achieved <strong>84% model
+              accuracy</strong>, with <strong>18% less processing time</strong> and <strong>10% lower token
+              cost</strong>.
+            </p>
+            <div class="tags">
+              <span>Sentiment analysis</span>
+              <span>Valuation modeling</span>
+              <span>Text-data processing</span>
+            </div>
+          </div>
+        </article>
+        <article class="project" id="ezocr" data-category="Machine Learning">
+          <div class="project-side">
+            <span class="project-number">09</span>
+            <span class="category category-machine-learning">Machine Learning</span>
+            <span class="date">Dec 2021 — Mar 2022</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-heading">
+              <div>
+                <h2>EzOCR</h2>
+                <p class="project-sub">OCR tools for educators</p>
+                <p class="lab">Learning Paths</p>
+              </div>
+              <p class="entry-location">Ajitgarh, India</p>
+            </div>
+            <p>
+              I developed <strong>EzOCR for my high school</strong> to help teachers detect plagiarism in
+              <strong>handwritten assignments</strong>. The application used <strong>optical character
+              recognition</strong> to support the review process, combining a <strong>Python</strong> workflow
+              with <strong>Pandas</strong> for data handling and <strong>TensorFlow and Keras</strong> for
+              machine learning.
+            </p>
+            <p>
+              I built the application interface and supporting services with <strong>React, JavaScript, and
+              Node.js</strong>, bringing the workflow into a tool teachers could use. It was adopted by
+              <strong>40+ faculty members</strong> and reduced the time spent processing academic dishonesty
+              cases by <strong>65%</strong>.
+            </p>
+            <div class="tags">
+              <span>Handwriting OCR</span>
+              <span>Document processing</span>
+              <span>Educator-facing interfaces</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+      <span>Harpuneet Singh</span>
+      <span>Curiosity, circuits & a little code.</span>
+      <a href="mailto:hpuneet.singh@mail.utoronto.ca">Say hello ↗</a>
+    </footer>
+  </body>
+</html>

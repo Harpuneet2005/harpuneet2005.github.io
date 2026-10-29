@@ -11,7 +11,7 @@ if (filters) {
       if (!project.hidden) count++;
     });
     filters.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === category)));
-    document.getElementById('filter-status').textContent = `${count} projects shown`;
+    document.getElementById('filter-status').textContent = `${count} research entries shown`;
   };
   filters.addEventListener('click', event => {
     const button = event.target.closest('button');
