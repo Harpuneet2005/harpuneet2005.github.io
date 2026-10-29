@@ -120,7 +120,7 @@ h2 {
 h3 {
   font-size:16px;
   line-height:1.45;
-  font-weight:600;
+  font-weight:400;
   margin-bottom:6px
 }
 
@@ -131,7 +131,7 @@ p {
 .eyebrow {
   font-size:11px;
   letter-spacing:1.9px;
-  font-weight:600;
+  font-weight:400;
   color:var(--muted);
   margin-bottom:18px
 }
@@ -906,7 +906,7 @@ summary {
   text-align: right;
   color: var(--blue);
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 6px;
   white-space: nowrap;
 }
@@ -942,4 +942,39 @@ summary {
 /* Preserve the smaller poster preview chosen in the uploaded site. */
 .poster-thumbnail {
   max-width: 175px;
+}
+
+
+/* Multiple category chips can sit under any research project number. */
+.project-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* Title and short description share a baseline, while their font sizes stay the same. */
+.entry-title-block {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.project-title-line {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0 8px;
+}
+.project .project-title-line h2 {
+  margin: 0;
+}
+.project .project-title-line .project-sub {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+}
+.entry-title-block .lab {
+  margin-top: 2px;
+}
+/* Keep all emphasis normal-weight, including any added later. */
+strong, b {
+  font-weight: inherit;
 }
